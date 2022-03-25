@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-//@ComponentScan("com.spring.puzzle.class1.example1.controller")
+@ComponentScan("com.spring.puzzle.class1.example1.controller")
 public class Application {
 
     public static void main(String[] args) {
