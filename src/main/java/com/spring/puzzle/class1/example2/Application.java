@@ -12,8 +12,8 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-/*    @Bean
+    @Bean
     public String serviceName(){
         return "MyServiceName";
-    }*/
+    }
 }
