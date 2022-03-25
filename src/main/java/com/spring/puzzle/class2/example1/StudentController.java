@@ -15,16 +15,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
 
 
-    @Autowired
-    DataService dataService;
+//    @Autowired
+//    DataService dataService;
 
     //修改方案：精确匹配名字
-/*    @Autowired
-    DataService oracleDataService;*/
+    @Autowired
+    DataService oracleDataService;
 
     @RequestMapping(path = "students/{id}", method = RequestMethod.DELETE)
     public void deleteStudent(@PathVariable("id") @Range(min = 1,max = 100) int id){
-        dataService.deleteStudent(id);
+        // dataService.deleteStudent(id);
+        oracleDataService.deleteStudent(id);
     };
 
 }
