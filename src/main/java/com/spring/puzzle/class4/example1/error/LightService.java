@@ -10,7 +10,7 @@ public class LightService {
     }
 
     public void shutdown() {
-        System.out.println("trun off all lights");
+        System.out.println("turn off all lights");
     }
 
     public void check() {
